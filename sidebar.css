@@ -1,0 +1,33 @@
+/* Supplemental layout. Keep the repository's original styles.css unchanged. */
+.shell.app-shell{max-width:1360px;padding:0;overflow:hidden}
+.app-header.top{padding:24px 30px;border-bottom:1px solid var(--line);gap:14px}
+.app-header .brand-symbol{flex:none;width:46px;height:46px;border-radius:12px}
+.app-header .brand-symbol svg{width:26px;height:26px}
+.app-header h1{font-size:24px;letter-spacing:-.45px}
+.app-subtitle{font-size:13px;color:var(--muted);margin:4px 0 0}
+.app-environment{margin-left:auto;display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border:1px solid #d4eade;border-radius:99px;background:#edf8f3;color:#087f5b;font-size:12px;font-weight:650;white-space:nowrap}
+.app-menu-toggle{display:none;border:1px solid #c4dcff;border-radius:9px;background:#eaf3ff;color:var(--main);font:inherit;font-weight:650;padding:9px 12px;align-items:center;gap:7px;cursor:pointer}
+.app-layout{display:grid;grid-template-columns:248px minmax(0,1fr);min-height:570px}
+.app-sidebar{background:#f8fafc;border-right:1px solid var(--line);padding:25px 14px;min-width:0}
+.app-nav-group+.app-nav-group{border-top:1px solid var(--line);margin-top:20px;padding-top:20px}
+.app-nav-label{margin:0 9px 11px;font-size:10px;font-weight:750;letter-spacing:.65px;line-height:1.5;color:#64748b}
+.app-nav-link{display:flex;align-items:center;gap:10px;text-decoration:none;color:#34465e;font-weight:650;font-size:13px;line-height:1.45;padding:12px 9px;margin:3px 0;border:1px solid transparent;border-radius:9px}
+.app-nav-link svg{flex:none;width:18px;height:18px;color:#64748b}
+.app-nav-link span{min-width:0;overflow-wrap:break-word}
+.app-nav-link .app-external{margin-left:auto;width:14px;height:14px;color:#8493a8}
+.app-nav-link:hover{background:#edf3fa}
+.app-nav-link[aria-current=page]{color:var(--main);background:#eaf3ff;border-color:#c4dcff}
+.app-nav-link[aria-current=page] svg{color:var(--main)}
+.app-content{min-width:0;padding:28px 30px 12px}
+.app-page-heading{margin-bottom:22px}
+.app-breadcrumb{margin:0 0 9px;color:#718096;font-size:12px}
+.app-page-heading h2{font-size:26px;letter-spacing:-.55px;margin:0 0 7px}
+.app-description{color:var(--muted);font-size:14px;line-height:1.5;margin:0}
+.app-content .tab-bar{margin:0 0 24px}
+.app-content .card,.app-content .result{min-width:0}
+.app-content .qr-box{max-width:100%;overflow:auto}
+.app-content canvas{max-width:100%;height:auto!important;object-fit:contain}
+.app-shell>.footer-note{margin:0;padding:16px 28px;background:#fff;text-align:center}
+@media(max-width:1050px){.app-layout{grid-template-columns:220px minmax(0,1fr)}.app-content{padding:24px 20px 12px}.app-content .grid-actions{grid-template-columns:1fr}.app-nav-link{font-size:12px}}
+@media(max-width:760px){.app-header.top{padding:17px 16px;align-items:center}.app-header h1{font-size:21px}.app-environment{display:none}.app-menu-toggle{display:inline-flex;margin-left:auto}.app-layout{display:block;min-height:0}.app-sidebar{border-right:0;border-bottom:1px solid var(--line);padding:16px}.app-sidebar.app-collapsed{display:none}.app-nav-link{font-size:14px}.app-nav-group+.app-nav-group{margin-top:12px;padding-top:12px}.app-content{padding:20px 16px 8px}.app-page-heading h2{font-size:22px}.app-shell>.footer-note{padding:14px 16px}.app-header .brand-symbol{width:40px;height:40px}}
+@media print{.app-header,.app-sidebar,.app-page-heading,.app-menu-toggle{display:none!important}.app-layout{display:block;min-height:0}.app-content{padding:0}.shell.app-shell{overflow:visible;max-width:none;border-radius:0;padding:0}.app-content .qr-box{overflow:visible}}
